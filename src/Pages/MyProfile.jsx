@@ -28,7 +28,7 @@ const MyProfile = () => {
           My GitHub Profile
         </h1>
         {/* Loader animation data control  */}
-        {/* {data.length !== 0 ?
+        {data.length !== 0 ?
           <>
            
             <div className="card lg:card-side card-bordered border-gray-300 flex md:px-5 py-5 w-full md:w-5/12 bg-slate-800">
@@ -97,7 +97,7 @@ const MyProfile = () => {
               </div>
               {data.public_repos > 30 && <a href={`${data.html_url}`} className="btn btn-outline w-full">View all repos</a>}
             </div>
-          </> : <Loader />} */}
+          </> : <Loader />} 
       </div>
     </>
   );
