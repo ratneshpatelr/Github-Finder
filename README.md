@@ -3,11 +3,7 @@
    - My personel react.js project
 
    * Click to view live demo 
-(https://git-hub-finder-react.netlify.app)
-## State Management Tool
-
-    - Context api
-
+    https://ratnesh-github-finder.vercel.app/
 ## Dependencies
 
     - axios
@@ -22,6 +18,5 @@
     - mobile hamburger menu
     - responsive design
     
-## GitHub Api Source Link:
-
-(https://api.github.com)
+## GitHub repo
+https://github.com/ratneshpatelr/Github-Finder.git
