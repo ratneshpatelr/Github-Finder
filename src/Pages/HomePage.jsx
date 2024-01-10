@@ -33,13 +33,34 @@ const HomePage = () => {
 
   return (
     <>
-
+      <div className="flex flex-col items-center justify-center">
+       <img
+        alt="My Image"
+        className="w-48 h-48 rounded-full object-cover blur-[1px]"
+        height="200"
+        src={'/myimage.jpeg'}
+        style={{
+          aspectRatio: "200/200",
+          objectFit: "cover",
+        }}
+        width="200"
+      />
+      <div className="text-center space-y-2 mb-2">
+        <h1 className="text-2xl font-bold md:text-3xl lg:text-4xl">Ratnesh Kurmi</h1>
+        <p className="text-slate-200">Web Developer || Programmer</p>
+      </div>
+      <button
+          className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+        >
+          <a href="Ratnesh Resume_01.pdf">View Resume</a>
+        </button>
+      </div>
       {/* Title */}
-      <h1 h1 className="text-4xl text-center font-bold underline text-slate-200" > Search GitHub Profile</h1 >
+      <h1 h1 className="text-4xl text-center font-bold underline text-stone-500 mt-4" > Search GitHub Profile</h1 >
 
       {/* Search Bar */}
-      <form form className="form-control my-5" >
-        <div className="flex justify-center space-x-3">
+      <form form className="form-control" >
+        <div className="flex justify-center">
           <input value={input} onChange={(e) => { setInput(e.target.value); setUserSearch([]) }} type="search" placeholder="Search" className="w-4/6  input input-primary input-bordered lg:w-2/6" />
         </div>
         <div className="flex justify-center space-x-3 mt-8">
